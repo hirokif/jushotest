@@ -11,7 +11,7 @@
 
 <% @shichosons.each do |shichoson| %>
   <tr>
-    <td><%= shichoson.todofuken %></td>
+    <td><%= shichoson.todofuken.name %></td>
     <td><%= shichoson.name %></td>
     <td><%= link_to 'Show', shichoson %></td>
     <td><%= link_to 'Edit', edit_shichoson_path(shichoson) %></td>

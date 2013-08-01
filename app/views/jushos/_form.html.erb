@@ -13,11 +13,13 @@
 
   <div class="field">
     <%= f.label :todofuken %><br />
-    <%= f.text_field :todofuken %>
+    <%#= f.text_field :todofuken %>
+    <%= f.collection_select(:todofuken_id, Todofuken.find(:all), :id, :name) %>
   </div>
   <div class="field">
     <%= f.label :shichoson %><br />
-    <%= f.text_field :shichoson %>
+    <%#= f.text_field :shichoson %>
+    <%= f.collection_select(:shichoson_id, Shichoson.find(:all), :id, :name) %>
   </div>
   <div class="field">
     <%= f.label :sonotajusho %><br />
