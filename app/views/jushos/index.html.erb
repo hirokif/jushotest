@@ -12,8 +12,8 @@
 
 <% @jushos.each do |jusho| %>
   <tr>
-    <td><%= jusho.todofuken %></td>
-    <td><%= jusho.shichoson %></td>
+    <td><%= jusho.todofuken.name %></td>
+    <td><%= jusho.shichoson.name %></td>
     <td><%= jusho.sonotajusho %></td>
     <td><%= link_to 'Show', jusho %></td>
     <td><%= link_to 'Edit', edit_jusho_path(jusho) %></td>
