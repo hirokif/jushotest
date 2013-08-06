@@ -1,4 +1,7 @@
 Jushotest::Application.routes.draw do
+  get "hello_world/index"
+  post "hello_world/index"
+
   resources :jushos
 
 
