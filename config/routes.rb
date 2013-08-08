@@ -2,6 +2,9 @@ Jushotest::Application.routes.draw do
   get "hello_world/index"
   post "hello_world/index"
 
+  get "say_hello/hello_world"
+  post "say_hello/hello_world"
+
   resources :jushos
 
 
