@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130731150946) do
+ActiveRecord::Schema.define(:version => 20130809011731) do
 
   create_table "jushos", :force => true do |t|
     t.integer  "todofuken_id"
@@ -35,6 +35,13 @@ ActiveRecord::Schema.define(:version => 20130731150946) do
 
   create_table "todofukens", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "user_id"
+    t.string   "user_name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
